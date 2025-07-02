@@ -495,4 +495,24 @@ footer p {
     margin: 5% auto;
     padding: 2em;
   }
+}
+
+@media (max-width: 900px) {
+  /* Make nav bar more compact on mobile */
+  nav {
+    padding: 0.3em 0.2em;
+  }
+  .nav-links {
+    gap: 0.7em;
+  }
+  /* Add background for horizontally scrollable food menu table */
+  .food-menu-scroll {
+    background: rgba(255,255,255,0.92);
+    border-radius: 1em;
+    padding: 0.5em 0.2em;
+    overflow-x: auto;
+  }
+  .food-menu-scroll table {
+    min-width: 600px;
+  }
 } 
