@@ -102,7 +102,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Mobile nav toggle
+// Mobile nav toggle (removed nav-toggle logic as button is gone)
 // Ensure this runs after DOM is loaded
 
 document.addEventListener('DOMContentLoaded', function() {
