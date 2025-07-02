@@ -54,15 +54,13 @@ nav {
   top: 0;
   z-index: 100;
   transition: box-shadow 0.3s, background 0.3s;
-  white-space: nowrap;
-  overflow-x: auto;
+  width: 100%;
 }
 
 .nav-links {
   display: flex;
   gap: 2em;
   justify-content: center;
-  white-space: nowrap;
 }
 
 nav a {
@@ -509,6 +507,7 @@ footer p {
     position: sticky;
     top: 0;
     z-index: 100;
+    position: relative;
   }
   .nav-toggle {
     display: block;
@@ -516,32 +515,43 @@ footer p {
     border: none;
     font-size: 2em;
     color: #FFD700;
-    margin-left: 1em;
+    margin-left: auto;
+    margin-right: 1.5em;
     cursor: pointer;
     z-index: 101;
+    float: right;
   }
   .nav-links {
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     background: linear-gradient(90deg, #6c2eb7 0%, #a18cd1 100%);
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100vw;
-    padding: 1em 0;
+    right: 0;
+    width: 70vw;
+    max-width: 300px;
+    min-width: 160px;
+    padding: 1em 0.5em;
     gap: 0.5em;
     box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    border-radius: 0 0 2em 2em;
-    transition: all 0.3s;
+    border-radius: 0 0 0 2em;
+    transition: transform 0.3s, opacity 0.3s;
+    z-index: 200;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
   }
   nav.open .nav-links {
     display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
   }
   .nav-links a {
     width: 100%;
-    text-align: left;
-    margin: 0.2em 1.5em;
+    text-align: right;
+    margin: 0.2em 0.8em;
     padding: 0.8em 0.5em;
     border-radius: 1em;
     font-size: 1.1em;
