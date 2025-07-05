@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form - Sky Hostels</title>
+  <link rel="stylesheet" href="css/styles1.css">
+</head>
+<body>
+  <div style="height: 2.5em;"></div>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="food-menu.html">Food Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="fees.html">Fees</a>
+      <a href="contact.html">Contact</a>
+      <a href="admission.html" class="active">Admission</a>
+    </div>
+  </nav>
+  <main>
+    <h1>Hostel Admission Form</h1>
+    <p style="text-align: center; margin-bottom: 2em; font-size: 1.1em; color: #666;">
+      Please fill out the form below to apply for hostel admission. All fields marked with * are required.
+    </p>
+    
+    <form id="admissionForm" class="contact-form admission-form">
+      <!-- Personal Information -->
+      <h2>Personal Information</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="dateOfBirth">Date of Birth *</label>
+          <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender *</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile Number *</label>
+          <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="address">Permanent Address *</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+      </div>
+      
+      <!-- Academic Information -->
+      <h2>Academic Information</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="institution">Educational Institution *</label>
+          <input type="text" id="institution" name="institution" required>
+        </div>
+        <div class="form-group">
+          <label for="course">Course/Program *</label>
+          <input type="text" id="course" name="course" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="yearOfStudy">Year of Study *</label>
+          <select id="yearOfStudy" name="yearOfStudy" required>
+            <option value="">Select Year</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+            <option value="5th">5th Year</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="studentId">Student ID Number *</label>
+          <input type="text" id="studentId" name="studentId" required>
+        </div>
+      </div>
+      
+      <!-- Hostel Preferences -->
+      <h2>Hostel Preferences</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="floorPreference">Floor Number</label>
+          <select id="floorPreference" name="floorPreference">
+            <option value="">No Preference</option>
+            <option value="ground">Ground Floor</option>
+            <option value="1st">1st Floor</option>
+            <option value="2nd">2nd Floor</option>
+            <option value="3rd">3rd Floor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="roomNumber">Room Number</label>
+          <input type="text" id="roomNumber" name="roomNumber" placeholder="Enter preferred room number">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="mealPlan">Meal Plan *</label>
+          <select id="mealPlan" name="mealPlan" required>
+            <option value="">Select Meal Plan</option>
+            <option value="veg">Vegetarian</option>
+            <option value="non-veg">Non-Vegetarian</option>
+            <option value="both">Both (Veg & Non-Veg)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="checkInDate">Expected Check-in Date *</label>
+          <input type="date" id="checkInDate" name="checkInDate" required>
+        </div>
+        <div class="form-group">
+          <label for="duration">Duration of Stay *</label>
+          <select id="duration" name="duration" required>
+            <option value="">Select Duration</option>
+            <option value="semester">One Semester</option>
+            <option value="academic-year">Full Academic Year</option>
+            <option value="short-term">Short Term (1-3 months)</option>
+            <option value="long-term">Long Term (1+ years)</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Aadhaar and Photo Upload -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="aadhaarUpload">Upload Aadhaar (PDF, JPG, PNG) *</label>
+          <input type="file" id="aadhaarUpload" name="aadhaarUpload" accept=".pdf,.jpg,.jpeg,.png" required>
+        </div>
+        <div class="form-group">
+          <label for="photoUpload">Upload Your Photo (JPG, PNG) *</label>
+          <input type="file" id="photoUpload" name="photoUpload" accept=".jpg,.jpeg,.png" required>
+        </div>
+      </div>
+      
+      <!-- Emergency Contact -->
+      <h2>Emergency Contact</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="emergencyName">Emergency Contact Name *</label>
+          <input type="text" id="emergencyName" name="emergencyName" required>
+        </div>
+        <div class="form-group">
+          <label for="emergencyRelation">Relationship *</label>
+          <input type="text" id="emergencyRelation" name="emergencyRelation" required>
+        </div>
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="emergencyPhone">Emergency Contact Phone *</label>
+          <input type="tel" id="emergencyPhone" name="emergencyPhone" pattern="[0-9]{10}" required>
+        </div>
+        <div class="form-group">
+          <label for="emergencyEmail">Emergency Contact Email</label>
+          <input type="email" id="emergencyEmail" name="emergencyEmail">
+        </div>
+      </div>
+      
+      <!-- Medical Information -->
+      <h2>Medical Information</h2>
+      <div class="form-group">
+        <label for="medicalConditions">Any Medical Conditions or Allergies</label>
+        <textarea id="medicalConditions" name="medicalConditions" rows="3" placeholder="Please mention any medical conditions, allergies, or special dietary requirements"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="medications">Current Medications (if any)</label>
+        <textarea id="medications" name="medications" rows="2" placeholder="List any medications you are currently taking"></textarea>
+      </div>
+      
+      <!-- Additional Information -->
+      <h2>Additional Information</h2>
+      <div class="form-group">
+        <label for="specialRequirements">Special Requirements or Requests</label>
+        <textarea id="specialRequirements" name="specialRequirements" rows="3" placeholder="Any special requirements, preferences, or additional information you'd like us to know"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="howDidYouHear">How did you hear about us?</label>
+        <select id="howDidYouHear" name="howDidYouHear">
+          <option value="">Select Option</option>
+          <option value="website">Website</option>
+          <option value="social-media">Social Media</option>
+          <option value="friend">Friend/Family</option>
+          <option value="college">College/University</option>
+          <option value="advertisement">Advertisement</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <!-- Terms and Conditions -->
+      <div class="form-group terms-section">
+        <h3>Terms and Conditions</h3>
+        <div class="terms-content">
+          <p><strong>1. Hostel Rules and Regulations:</strong></p>
+          <ul>
+            <li>All students must follow the hostel rules and maintain discipline</li>
+            <li>No smoking, alcohol, or drugs are allowed on the premises</li>
+            <li>Quiet hours are from 10:00 PM to 6:00 AM</li>
+            <li>Guests are not allowed in rooms after 8:00 PM</li>
+            <li>Students must keep their rooms clean and tidy</li>
+            <li>Any damage to hostel property will be charged to the student</li>
+          </ul>
+          
+          <p><strong>2. Payment Terms:</strong></p>
+          <ul>
+            <li>Fees must be paid in advance for each month/semester</li>
+            <li>Late payment will incur a penalty of ₹500 per week</li>
+            <li>Security deposit is non-refundable if rules are violated</li>
+            <li>Refund policy applies only for genuine medical emergencies</li>
+          </ul>
+          
+          <p><strong>3. Privacy and Data Protection:</strong></p>
+          <ul>
+            <li>Your personal information will be used only for hostel administration</li>
+            <li>We will not share your data with third parties without consent</li>
+            <li>You have the right to request access to your personal data</li>
+            <li>Data will be retained only for the duration of your stay</li>
+          </ul>
+        </div>
+        
+        <label class="checkbox-label">
+          <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+          <span class="checkmark"></span>
+          I have read and agree to the hostel rules and regulations *
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="privacyAccepted" name="privacyAccepted" required>
+          <span class="checkmark"></span>
+          I consent to the processing of my personal data for admission purposes *
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="liabilityAccepted" name="liabilityAccepted" required>
+          <span class="checkmark"></span>
+          I understand that the hostel is not liable for personal belongings *
+        </label>
+      </div>
+      
+      <button type="submit" id="submitBtn">
+        <span class="btn-text">Submit Application</span>
+        <span class="btn-loading" style="display: none;">
+          <span class="spinner"></span> Submitting...
+        </span>
+      </button>
+    </form>
+    
+    <!-- Success/Error Messages -->
+    <div id="messageContainer" style="display: none;" class="message-container">
+      <div id="successMessage" class="message success" style="display: none;">
+        <h3>✅ Application Submitted Successfully!</h3>
+        <p>Thank you for your application. We have received your submission and will process it within 3-5 business days.</p>
+        <p>You will receive a confirmation email shortly.</p>
+      </div>
+      <div id="errorMessage" class="message error" style="display: none;">
+        <h3>❌ Submission Error</h3>
+        <p id="errorText">An error occurred while submitting your application. Please try again.</p>
+      </div>
+    </div>
+    
+    <section class="admission-info">
+      <h2>Important Information</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>📋 Required Documents</h3>
+          <ul>
+            <li>Student ID Card</li>
+            <li>College/University ID</li>
+            <li>Passport size photographs (2 copies)</li>
+            <li>Address proof</li>
+            <li>Medical certificate (if applicable)</li>
+          </ul>
+        </div>
+        <div class="info-item">
+          <h3>⏰ Processing Time</h3>
+          <p>Applications are typically processed within 3-5 business days. You will receive a confirmation email once your application is reviewed.</p>
+        </div>
+        <div class="info-item">
+          <h3>📞 Contact</h3>
+          <p>For any queries regarding admission, please contact us:</p>
+          <p>Phone: +91-9094444115</p>
+          <p>Email: skyhostels2023@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Sky Hostels</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    // Google Apps Script Web App URL - Replace with your deployed script URL
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzmJTMyvI09eJsyVdBg1pLmiyxMHIcNF9hOoar2xbU7cvHYxD8IybPIEqbL6UzeunOa0Q/exec';
+    
+    document.getElementById('admissionForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const submitBtn = document.getElementById('submitBtn');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const btnLoading = submitBtn.querySelector('.btn-loading');
+      const messageContainer = document.getElementById('messageContainer');
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      const errorText = document.getElementById('errorText');
+      
+      // File validation
+      const aadhaarInput = document.getElementById('aadhaarUpload');
+      const photoInput = document.getElementById('photoUpload');
+      const aadhaarFile = aadhaarInput.files[0];
+      const photoFile = photoInput.files[0];
+      const maxSize = 10 * 1024 * 1024; // 10MB
+      const aadhaarTypes = ['application/pdf', 'image/jpeg', 'image/png'];
+      const photoTypes = ['image/jpeg', 'image/png'];
+      
+      if (!aadhaarFile || !aadhaarTypes.includes(aadhaarFile.type) || aadhaarFile.size > maxSize) {
+        showMessage('error', 'Aadhaar file must be PDF, JPG, or PNG and less than 10MB.');
+        return;
+      }
+      if (!photoFile || !photoTypes.includes(photoFile.type) || photoFile.size > maxSize) {
+        showMessage('error', 'Photo must be JPG or PNG and less than 10MB.');
+        return;
+      }
+      
+      // Show loading state
+      submitBtn.disabled = true;
+      btnText.style.display = 'none';
+      btnLoading.style.display = 'inline-flex';
+      
+      // Hide any previous messages
+      messageContainer.style.display = 'none';
+      successMessage.style.display = 'none';
+      errorMessage.style.display = 'none';
+      
+      try {
+        // Collect form data
+        const formData = new FormData(this);
+        // Submit to Google Apps Script
+        const response = await fetch(GOOGLE_SCRIPT_URL, {
+          method: 'POST',
+          body: formData
+        });
+        // Try to parse response (if CORS allows)
+        let ok = false;
+        try {
+          const result = await response.json();
+          ok = result.status === 'success';
+        } catch {
+          ok = response.ok;
+        }
+        if (ok) {
+          showMessage('success');
+          this.reset();
+        } else {
+          showMessage('error', 'Submission failed. Please try again.');
+        }
+      } catch (error) {
+        console.error('Submission error:', error);
+        showMessage('error', 'Network error. Please check your connection and try again.');
+      } finally {
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline';
+        btnLoading.style.display = 'none';
+      }
+    });
+    
+    function showMessage(type, customErrorText = '') {
+      const messageContainer = document.getElementById('messageContainer');
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+      const errorText = document.getElementById('errorText');
+      
+      messageContainer.style.display = 'block';
+      if (type === 'success') {
+        successMessage.style.display = 'block';
+        errorMessage.style.display = 'none';
+        messageContainer.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'block';
+        if (customErrorText) errorText.textContent = customErrorText;
+        messageContainer.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html> 
