@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Hostels - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="admin-body">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Sky Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-module="overview">Overview</a></li>
+                    <li><a href="#" class="nav-link" data-module="rooms">Rooms Panel</a></li>
+                    <li><a href="#" class="nav-link" data-module="students">Students</a></li>
+                    <li><a href="#" class="nav-link" data-module="bookings">Bookings</a></li>
+                    <li><a href="#" class="nav-link" data-module="payments">Payments</a></li>
+                    <li><a href="#" class="nav-link" data-module="account">Account</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="../index.html" class="logout-btn">Back to Site</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <h1 id="module-title">Dashboard Overview</h1>
+                <div class="admin-profile">
+                    <span>Admin User</span>
+                </div>
+            </header>
+
+            <div id="module-container" class="module-view">
+                <!-- Data will be injected here via admin.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals (Global) -->
+    <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
