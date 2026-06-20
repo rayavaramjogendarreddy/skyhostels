@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sky Hostels - Home</title>
-  <link rel="stylesheet" href="css/styles1.css">
+  <link rel="stylesheet" href="css/styles1.css?v=4">
 </head>
 
 <body>
@@ -13,7 +13,8 @@
   <header class="site-header">
     <nav>
       <a href="index.html" class="logo-link" style="display: flex; align-items: center; text-decoration: none;">
-        <img src="assets/images/logo.png" alt="Sky Hostels Logo" style="height: 38px; width: auto; object-fit: contain;">
+        <img src="assets/images/logo.png" alt="Sky Hostels Logo"
+          style="height: 38px; width: auto; object-fit: contain;">
       </a>
       <button class="menu-toggle" id="menuToggle">☰</button>
       <div class="nav-links" id="navLinks">
@@ -85,16 +86,634 @@
           </svg>
           Washing Machine
         </li>
+        <li class="feature-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+            <path d="M12 22a5 5 0 0 0 5-5c0-4-5-9-5-9s-5 5-5 9a5 5 0 0 0 5 5z"></path>
+          </svg>
+          Hot Water
+        </li>
+        <li class="feature-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path>
+          </svg>
+          Garage Facility
+        </li>
       </ul>
     </section>
-    <div class="cta-buttons">
-      <a href="contact.html" class="btn">Contact Us</a>
-    </div>
+
   </header>
-  <footer>
-    <p>&copy; 2024 Sky Hostels | <a href="admin/index.html"
-        style="color:rgba(255,255,255,0.3); text-decoration:none; font-size:0.8rem;">Admin Login</a></p>
+
+  <main class="homepage-content">
+    <!-- 1️⃣ WHY CHOOSE SKY HOSTELS -->
+    <section id="why-choose" class="why-choose-section">
+      <h2>Why Choose Sky Hostels</h2>
+      <div class="why-choose-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M4 19.5c0-.8.7-1.5 1.5-1.5H20M4 19.5c0 .8.7 1.5 1.5 1.5H20M4 19.5V4.5C4 3.7 4.7 3 5.5 3H20v16.5H5.5c-.8 0-1.5-.7-1.5-1.5z" />
+            </svg>
+          </div>
+          <h3 class="why-title">College Students Only</h3>
+          <p class="why-text">An exclusive and disciplined environment catered solely for academic scholars and college
+            students.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="why-title">Separate Boys & Girls Accommodation</h3>
+          <p class="why-text">Completely distinct secure blocks for boys and girls ensuring absolute privacy and
+            comfort.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+              <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <line x1="12" y1="20" x2="12.01" y2="20" />
+            </svg>
+          </div>
+          <h3 class="why-title">High-Speed WiFi</h3>
+          <p class="why-text">Uninterrupted high-speed internet connection across the campus for e-learning and
+            projects.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <h3 class="why-title">24x7 Security & CCTV</h3>
+          <p class="why-text">Continuous security patrols and complete CCTV surveillance monitoring for student safety.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+          </div>
+          <h3 class="why-title">Hygienic Veg & Non-Veg Food</h3>
+          <p class="why-text">Nutritious, home-style food prepared in modern clean kitchens served multiple times daily.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3 class="why-title">Daily Housekeeping</h3>
+          <p class="why-text">Professional maintenance staff keeping the corridors, study rooms, and bathrooms spotless
+            daily.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <h3 class="why-title">Study-Friendly Environment</h3>
+          <p class="why-text">Special designated silent library/study zones equipped with modern desks to help focus.
+          </p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h3 class="why-title">Safe & Comfortable Living</h3>
+          <p class="why-text">Fully equipped rooms designed with modern storage solutions for a comfortable home-like
+            stay.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2️⃣ ROOM TYPES & ACCOMMODATION -->
+    <section id="accommodations" class="accommodations-section">
+      <h2>Room Types & Accommodation</h2>
+      <div class="accommodations-grid">
+        <div class="room-card">
+          <div class="room-img-container">
+            <img src="assets/images/room_hall.jpg" alt="Hall Accommodation">
+            <span class="room-badge">Hall Sharing</span>
+          </div>
+          <div class="room-info">
+            <h3 class="why-title">Hall Accommodation</h3>
+            <div class="room-prices">
+              <div class="room-price-item">
+                <span class="room-price-label">Yearly Plan</span>
+                <span class="room-price-val">₹55,000 / yr</span>
+              </div>
+              <div class="room-price-item">
+                <span class="room-price-label">Monthly Plan</span>
+                <span class="room-price-val">₹5,500 / mo</span>
+              </div>
+            </div>
+            <ul class="room-specs">
+              <li>• Comfortable Single Beds</li>
+              <li>• Personal Secure Storage</li>
+              <li>• Premium Ventilation & Lighting</li>
+              <li>• Dedicated Study desks</li>
+              <li>• Clean, Hygienic Environment</li>
+            </ul>
+            <a href="contact.html" class="btn" style="text-align:center; margin-top: 1rem;">Book Hall Plan</a>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-img-container">
+            <img src="assets/images/room_bedroom.jpg" alt="Bedroom Accommodation">
+            <span class="room-badge">Bedroom Sharing</span>
+          </div>
+          <div class="room-info">
+            <h3 class="why-title">Bedroom Accommodation</h3>
+            <div class="room-prices">
+              <div class="room-price-item">
+                <span class="room-price-label">Yearly Plan</span>
+                <span class="room-price-val">₹60,000 / yr</span>
+              </div>
+              <div class="room-price-item">
+                <span class="room-price-label">Monthly Plan</span>
+                <span class="room-price-val">₹6,000 / mo</span>
+              </div>
+            </div>
+            <ul class="room-specs">
+              <li>• Cozy Single Beds</li>
+              <li>• Spacious Wardrobe space</li>
+              <li>• Air Cooling fan & Lights</li>
+              <li>• Study Space with sockets</li>
+              <li>• Housekept Clean Room</li>
+            </ul>
+            <a href="contact.html" class="btn" style="text-align:center; margin-top: 1rem;">Book Bedroom Plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ HOSTEL GALLERY -->
+    <section id="gallery" class="gallery-section">
+      <h2>Hostel Gallery</h2>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="rooms">Rooms</button>
+        <button class="filter-btn" data-filter="study">Study Room</button>
+        <button class="filter-btn" data-filter="dining">Dining Area</button>
+        <button class="filter-btn" data-filter="entrance">Hostel Entrance</button>
+        <button class="filter-btn" data-filter="common">Common Area</button>
+      </div>
+      <div class="gallery-masonry" id="gallery-masonry">
+        <div class="gallery-card" data-category="rooms">
+          <img src="assets/images/room_hall.jpg" alt="Hall Room View">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Rooms</span>
+            <span class="gallery-title">Hall Accommodation Sharing</span>
+          </div>
+        </div>
+        <div class="gallery-card" data-category="rooms">
+          <img src="assets/images/room_bedroom.jpg" alt="Bedroom Accommodation View">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Rooms</span>
+            <span class="gallery-title">Premium Shared Bedroom</span>
+          </div>
+        </div>
+        <div class="gallery-card" data-category="study">
+          <img src="assets/images/gallery_study.jpg" alt="Quiet Study Zone">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Study Room</span>
+            <span class="gallery-title">Spacious Silent Study Desks</span>
+          </div>
+        </div>
+        <div class="gallery-card" data-category="dining">
+          <img src="assets/images/gallery_dining.jpg" alt="Hostel Mess Hall">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Dining Area</span>
+            <span class="gallery-title">Modern Clean Dining Room</span>
+          </div>
+        </div>
+        <div class="gallery-card" data-category="entrance">
+          <img src="assets/images/building.jpg" alt="Sky Hostels Entrance View">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Hostel Entrance</span>
+            <span class="gallery-title">Sky Boys Hostel Building Outer</span>
+          </div>
+        </div>
+        <div class="gallery-card" data-category="common">
+          <img src="assets/images/gallery_common.jpg" alt="Student Lounging Area">
+          <div class="gallery-overlay">
+            <span class="gallery-category">Common Area</span>
+            <span class="gallery-title">Relaxing TV Lounge & Sofas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ STUDENT TESTIMONIALS -->
+    <section id="testimonials" class="testimonials-section">
+      <h2>Student Testimonials</h2>
+      <div class="testimonials-slider-container">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"The food is excellent and prepared under extremely hygienic conditions. Very
+              peaceful study room atmosphere helping me focus on my engineering semester studies."</p>
+            <div class="testimonial-user">
+              <span class="testimonial-name">Harish Prasad</span>
+              <span class="testimonial-meta">Resident (2nd Year, SVU)</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Best hostel near our college. The high-speed internet, regular room cleaning,
+              and continuous water supply make student living highly comfortable."</p>
+            <div class="testimonial-user">
+              <span class="testimonial-name">Sandeep Kumar</span>
+              <span class="testimonial-meta">Resident (Final Year, SVCE)</span>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Security is fantastic here. As a parent, I feel absolutely safe knowing there's
+              strict 24x7 gate security and CCTV monitoring throughout the campus."</p>
+            <div class="testimonial-user">
+              <span class="testimonial-name">Ranganathan S.</span>
+              <span class="testimonial-meta">Student Parent (Mangalam Road)</span>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ WEEKLY FOOD MENU PREVIEW -->
+    <section id="food-menu-preview" class="menu-preview-section">
+      <h2>Weekly Food Menu Preview</h2>
+      <div class="menu-preview-grid">
+        <div class="menu-day-card">
+          <h3 class="menu-day-title">Sunday Mess Menu</h3>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Breakfast</span>
+            <span class="menu-item-val">Crispy Dosa with Chutney & Sambar</span>
+          </div>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Lunch</span>
+            <span class="menu-item-val">Steam Rice, Pappu, Veg Fry, Curd</span>
+          </div>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Dinner</span>
+            <span class="menu-item-val">Special Chicken Curry, White Rice, Rasam</span>
+          </div>
+        </div>
+
+        <div class="menu-day-card">
+          <h3 class="menu-day-title">Wednesday Mess Menu</h3>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Breakfast</span>
+            <span class="menu-item-val">Fluffy Poori with Potato Curry</span>
+          </div>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Lunch</span>
+            <span class="menu-item-val">Steam Rice, Guthi Vankaya Curry, Sambar</span>
+          </div>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Dinner</span>
+            <span class="menu-item-val">Hostel Chicken Biryani / Egg Masala</span>
+          </div>
+        </div>
+
+        <div class="menu-day-card">
+          <h3 class="menu-day-title">Friday Mess Menu</h3>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Breakfast</span>
+            <span class="menu-item-val">Atlu Idly with Groundnut Pachadi</span>
+          </div>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Lunch</span>
+            <span class="menu-item-val">Steam Rice, Pappu, Veg Thalimpu, Curd</span>
+          </div>
+          <div class="menu-item-group">
+            <span class="menu-item-label">Dinner</span>
+            <span class="menu-item-val">Pulav Rice with Chicken Curry</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <a href="food-menu.html" class="btn">View Full Weekly Menu</a>
+      </div>
+    </section>
+
+    <!-- 6️⃣ LOCATION & CONNECTIVITY -->
+    <section id="location" class="location-section">
+      <h2>Location & Connectivity</h2>
+      <div class="location-container">
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31015.57404197049!2d79.44544700024541!3d13.661001571635271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d49420a7e8aa3%3A0x35ffc38d9573f0e2!2sSky%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1751433770340!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="connectivity-card">
+          <h3 class="why-title" style="margin-bottom: 1.5rem;">Facilities & Connectivity</h3>
+          <ul class="connectivity-list">
+            <li class="connectivity-item">
+              <span class="connectivity-icon">📍</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Sky Hostels</span>
+                <span class="connectivity-desc">Mangalam Road, Opposite SVC College</span>
+              </div>
+            </li>
+            <li class="connectivity-item">
+              <span class="connectivity-icon">🏫</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Colleges</span>
+                <span class="connectivity-desc">Sri Venkateswara College of Engineering (SVCE) - 2 mins</span>
+              </div>
+            </li>
+            <li class="connectivity-item">
+              <span class="connectivity-icon">🏥</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Hospitals</span>
+                <span class="connectivity-desc">SVIMS & Ruia General Hospital - 10 mins</span>
+              </div>
+            </li>
+            <li class="connectivity-item">
+              <span class="connectivity-icon">🚌</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Bus Stand</span>
+                <span class="connectivity-desc">Tirupati Central Bus Station - 12 mins</span>
+              </div>
+            </li>
+            <li class="connectivity-item">
+              <span class="connectivity-icon">🚆</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Railway Station</span>
+                <span class="connectivity-desc">Tirupati Main Junction - 15 mins</span>
+              </div>
+            </li>
+            <li class="connectivity-item">
+              <span class="connectivity-icon">🚗</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Parking Space</span>
+                <span class="connectivity-desc">Garage is available</span>
+              </div>
+            </li>
+            <li class="connectivity-item">
+              <span class="connectivity-icon">🚿</span>
+              <div class="connectivity-details">
+                <span class="connectivity-title">Hot Water</span>
+                <span class="connectivity-desc">24/7 Hot water facility</span>
+              </div>
+            </li>
+          </ul>
+          <div style="margin-top: 2rem;">
+            <a href="https://maps.app.goo.gl/jFpB6WzPT5cyGYXk6" target="_blank" class="btn"
+              style="width:100%; text-align:center;">Get Route on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 8️⃣ HOSTEL RULES -->
+    <section id="rules-faq" class="faq-section">
+      <h2>Hostel Rules & FAQs</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>What are the curfew timings of Sky Hostels?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>The gates open at 6:00 AM and curfew is strictly enforced at 10:00 PM. No resident is allowed to enter or
+              leave the premises without written warden permissions after curfew hours.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>What is the visitor and guest policy?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Visitors are allowed inside common lobbies only between 10:00 AM and 6:00 PM with prior warden
+              permission. Overnight guests are strictly prohibited inside student rooms.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Are there specific rules regarding dining hall food?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Food must be consumed inside the dining area. Carrying meals into individual student rooms is not
+              permitted unless under genuine medical sickness conditions approved by the warden.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>How are payment dues and fee collections structured?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Monthly hostel fees must be paid in advance by the 5th of each calendar month. Late payments will incur
+              penalties. Deposits are returned upon complete checkout verification.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>What is the cleanliness policy for individual rooms?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Daily cleaning is handled by our staff. However, students must maintain basic cleanliness inside their
+              rooms and keep their secure personal storage organized.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>What are the strict disciplinary boundaries?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Tobacco, alcohol, and illegal substances are strictly prohibited. Loud music or disturbances after 10 PM
+              will lead to immediate disciplinary inquiry and potential eviction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9️⃣ FEE STRUCTURE -->
+    <section id="detailed-fees" class="pricing-section">
+      <h2>Fee Structure</h2>
+      <div class="pricing-table-container">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th>Accommodation Type</th>
+              <th>Monthly Plan</th>
+              <th>Yearly Plan</th>
+              <th>Security Deposit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hall Accommodation</strong></td>
+              <td class="pricing-price">₹5,500 <span style="font-size: 0.8rem; color: var(--text-muted);">/mo</span>
+              </td>
+              <td class="pricing-price">₹55,000 <span style="font-size: 0.8rem; color: var(--text-muted);">/yr</span>
+              </td>
+              <td>₹5,500 <span style="font-size: 0.8rem; color: var(--text-muted);">(Refundable)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Bedroom Accommodation</strong></td>
+              <td class="pricing-price">₹6,000 <span style="font-size: 0.8rem; color: var(--text-muted);">/mo</span>
+              </td>
+              <td class="pricing-price">₹61,000 <span style="font-size: 0.8rem; color: var(--text-muted);">/yr</span>
+              </td>
+              <td>₹6,000 <span style="font-size: 0.8rem; color: var(--text-muted);">(Refundable)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="policy-cards">
+        <div class="policy-card">
+          <h4 class="policy-title">💰 Deposit Policy</h4>
+          <p class="why-text">Security deposits are fully refundable upon vacating the premises, subject to checking for
+            zero pending fee dues and zero building damages.</p>
+        </div>
+        <div class="policy-card">
+          <h4 class="policy-title">🔧 Maintenance Fees</h4>
+          <p class="why-text">An annual maintenance fee of ₹2,000 is applicable for upkeep of communal facilities,
+            washing machines, study room power, and common water purifiers.</p>
+        </div>
+        <div class="policy-card">
+          <h4 class="policy-title">🔄 Refund Policy</h4>
+          <p class="why-text">Yearly plans are non-refundable if the resident decides to leave early. Only the safety
+            security deposits will be returned upon check-out verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔟 ADMISSIONS OPEN SECTION -->
+    <section id="admissions-cta" class="admissions-cta-section">
+      <div class="cta-glass-card">
+        <div class="timeline-badge" style="font-size: 1rem; padding: 0.5rem 1.5rem;">Admissions Open</div>
+        <h2 class="cta-heading">Admissions Open for Academic Year 2026-27</h2>
+        <p style="color: var(--text-muted); max-width: 600px; line-height: 1.6;">Secure your comfortable and
+          study-friendly living space today. Contact our management or apply directly online.</p>
+        <div class="cta-buttons-row">
+          <a href="contact.html" class="btn">Apply Now</a>
+          <a href="tel:+919094444115" class="btn btn-call">Call Now</a>
+          <a href="https://wa.me/919094444115" target="_blank" class="btn btn-whatsapp">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 1️⃣1️⃣ FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919094444115" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+      <path
+        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+    </svg>
+  </a>
+
+  <!-- 1️⃣2️⃣ PROFESSIONAL FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.png" alt="Sky Hostels Logo">
+          </a>
+          <p class="footer-desc">Providing premium, secure, and academic-friendly accommodation blocks for boys and
+            girls in Tirupati. Your comfortable home away from home.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook">F</a>
+            <a href="#" class="social-icon" aria-label="Instagram">I</a>
+            <a href="#" class="social-icon" aria-label="Twitter">T</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="food-menu.html">Food Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fees.html">Fee Structure</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Rules & Info</h4>
+          <ul class="footer-links">
+            <li><a href="#rules-faq">Hostel Timings</a></li>
+            <li><a href="#rules-faq">Visitor Policy</a></li>
+            <li><a href="#detailed-fees">Refund Policy</a></li>
+            <li><a href="about.html#rules">Discipline Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Contact Info</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-icon">📍</span>
+              <span>SVC College Opposite, Mangalam Road, Tirupati, AP, India</span>
+            </li>
+            <li>
+              <span class="footer-icon">📞</span>
+              <span>+91-9094444115 / +91-9094444116</span>
+            </li>
+            <li>
+              <span class="footer-icon">✉️</span>
+              <span>skyhostels2023@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sky Hostels. All rights reserved. | Built for Premium Living.</p>
+      </div>
+    </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 
