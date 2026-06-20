@@ -154,6 +154,7 @@ nav a:hover, nav a.active {
 
 /* Features Grid */
 .features {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto 6rem auto;
   padding: 2rem;
@@ -171,7 +172,7 @@ nav a:hover, nav a.active {
 .features-grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   padding: 0;
   width: 100%;
