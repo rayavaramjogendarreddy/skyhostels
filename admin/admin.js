@@ -341,8 +341,82 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     };
 
+    window.openAddRoomModal = () => {
+        modalBody.innerHTML = `
+            <h2>Add New Room</h2>
+            <form id="room-form" class="admin-form">
+                <div class="form-group">
+                    <label>Room Number</label>
+                    <input type="text" id="r-number" required placeholder="e.g., 201">
+                </div>
+                <div class="form-group">
+                    <label>Room Type</label>
+                    <select id="r-type">
+                        <option value="Single">Single Sharing</option>
+                        <option value="2 Sharing">2 Sharing</option>
+                        <option value="3 Sharing">3 Sharing</option>
+                        <option value="4 Sharing">4 Sharing</option>
+                        <option value="5 Sharing" selected>5 Sharing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Floor</label>
+                    <input type="number" id="r-floor" min="0" required placeholder="e.g., 2">
+                </div>
+                <div class="form-group">
+                    <label>Rent per Bed (₹)</label>
+                    <input type="number" id="r-rent" required placeholder="e.g., 8000">
+                </div>
+                <div class="form-group">
+                    <label>Capacity (Beds)</label>
+                    <input type="number" id="r-capacity" min="1" required placeholder="e.g., 5">
+                </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <select id="r-status">
+                        <option value="Available" selected>Available</option>
+                        <option value="Occupied">Occupied</option>
+                    </select>
+                </div>
+                <button type="submit" class="action-btn" style="width: 100%">Add Room</button>
+            </form>
+        `;
+        overlay.classList.remove('hidden');
+        document.getElementById('room-form').onsubmit = (e) => {
+            e.preventDefault();
+            const current = DataService.getItems(STORAGE_KEYS.ROOMS);
+            const newRoom = {
+                id: Date.now(),
+                number: document.getElementById('r-number').value,
+                type: document.getElementById('r-type').value,
+                floor: parseInt(document.getElementById('r-floor').value),
+                rent: parseInt(document.getElementById('r-rent').value),
+                capacity: parseInt(document.getElementById('r-capacity').value),
+                status: document.getElementById('r-status').value
+            };
+            current.push(newRoom);
+            DataService.setItem(STORAGE_KEYS.ROOMS, current);
+            window.closeModal();
+            renderRoomsPanel();
+        };
+    };
+
     window.deleteStudent = (id) => { if (confirm('Remove student?')) { DataService.setItem(STORAGE_KEYS.STUDENTS, DataService.getItems(STORAGE_KEYS.STUDENTS).filter(x => x.id !== id)); renderStudentsList(); } };
-    window.deleteRoom = (id) => { if (confirm('Delete room?')) { DataService.setItem(STORAGE_KEYS.ROOMS, DataService.getItems(STORAGE_KEYS.ROOMS).filter(x => x.id !== id)); window.closeModal(); renderRoomsPanel(); } };
+    window.deleteRoom = (id) => {
+        if (confirm('Delete room?')) {
+            DataService.setItem(STORAGE_KEYS.ROOMS, DataService.getItems(STORAGE_KEYS.ROOMS).filter(x => x.id !== id));
+            // Unassign students from this room
+            const students = DataService.getItems(STORAGE_KEYS.STUDENTS);
+            students.forEach(s => {
+                if (s.roomId === id) {
+                    s.roomId = null;
+                }
+            });
+            DataService.setItem(STORAGE_KEYS.STUDENTS, students);
+            window.closeModal();
+            renderRoomsPanel();
+        }
+    };
 
     window.loadModule = loadModule;
     loadModule('overview');

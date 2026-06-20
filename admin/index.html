@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sky Hostels - Admin Dashboard</title>
+    <script>
+        if (!sessionStorage.getItem('sky_admin_auth')) {
+            window.location.href = 'login.html';
+        }
+    </script>
     <link rel="stylesheet" href="admin-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
